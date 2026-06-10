@@ -1,0 +1,41 @@
+{
+  "bookSourceName": "{{SOURCE_NAME}}",
+  "bookSourceUrl": "{{SOURCE_URL}}",
+  "bookSourceGroup": "精选",
+  "bookSourceType": 0,
+  "bookUrlPattern": "",
+  "enabled": true,
+  "enabledExplore": true,
+  "enabledCookieJar": true,
+  "customOrder": 0,
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\",\n  \"Referer\": \"{{SOURCE_URL}}/\"\n}",
+  "exploreUrl": "",
+  "ruleExplore": {
+    "bookList": "",
+    "name": "",
+    "bookUrl": "",
+    "coverUrl": "",
+    "author": "",
+    "kind": "",
+    "intro": "",
+    "lastChapter": ""
+  },
+  "ruleBookInfo": {
+    "name": "",
+    "author": "",
+    "kind": "",
+    "intro": "",
+    "coverUrl": "",
+    "lastChapter": "",
+    "status": ""
+  },
+  "ruleToc": {
+    "chapterList": "",
+    "chapterName": "",
+    "chapterUrl": ""
+  },
+  "ruleContent": {
+    "content": "",
+    "replaceRegex": ""
+  }
+}
