@@ -1,0 +1,41 @@
+{
+  "bookSourceName": "肉肉屋",
+  "bookSourceUrl": "https://www.021best.com",
+  "bookSourceGroup": "精选",
+  "bookSourceType": 0,
+  "bookUrlPattern": "https://www.021best.com/book/\\d+",
+  "enabled": true,
+  "enabledExplore": true,
+  "enabledCookieJar": true,
+  "customOrder": 0,
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\",\n  \"Referer\": \"https://www.021best.com/\"\n}",
+  "exploreUrl": "全部::/category/0/{{page}}.html\n综合其他::/category/1/{{page}}.html\n都市小说::/category/2/{{page}}.html\n玄幻小说::/category/3/{{page}}.html\n耽美小说::/category/4/{{page}}.html\n网游小说::/category/5/{{page}}.html\n科幻小说::/category/6/{{page}}.html\n仙侠小说::/category/7/{{page}}.html\n历史小说::/category/8/{{page}}.html\n其他小说::/category/9/{{page}}.html\n藏经阁::/category/10/{{page}}.html\n阅读排行::/rank/all/0/{{page}}.html\n最新更新::/category/0/{{page}}.html",
+  "ruleExplore": {
+    "bookList": ".book_list_img li",
+    "name": ".book_img_name a@text",
+    "bookUrl": ".book_img_name a@href",
+    "coverUrl": "img.lazyload@_src||img@src",
+    "author": "",
+    "kind": "",
+    "intro": "",
+    "lastChapter": ""
+  },
+  "ruleBookInfo": {
+    "name": "meta[property=og:novel:book_name]@content",
+    "author": "meta[property=og:novel:author]@content",
+    "kind": "meta[property=og:novel:category]@content",
+    "intro": "meta[property=og:description]@content",
+    "coverUrl": "meta[property=og:image]@content",
+    "lastChapter": "meta[property=og:novel:latest_chapter_name]@content",
+    "status": "meta[property=og:novel:status]@content"
+  },
+  "ruleToc": {
+    "chapterList": "ol.BCsectionTwo-top li",
+    "chapterName": "a@text",
+    "chapterUrl": "a@href"
+  },
+  "ruleContent": {
+    "content": "#C0NTENT@html",
+    "replaceRegex": "<div class=\"s_m\">[\\s\\S]*?</div>|<script[\\s\\S]*?</script>|\\s*本站新.*?域名\\s*"
+  }
+}
