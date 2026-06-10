@@ -1,0 +1,90 @@
+{
+  "{{SOURCE_NAME}}": {
+    "sourceName": "{{SOURCE_NAME}}",
+    "sourceUrl": "{{SOURCE_URL}}",
+    "sourceType": "novel",
+    "enable": 1,
+    "httpHeaders": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "Referer": "{{SOURCE_URL}}/"
+    },
+    "desc": "{{SOURCE_NAME}} - 免费小说",
+    "weight": "9999",
+    "miniAppVersion": "2.0",
+    "lastModifyTime": "{{TIMESTAMP}}",
+    "loginUrl": "",
+    "shudanList": {},
+    "searchShudan": {"actionID": "searchShudan", "parserID": "DOM"},
+    "relatedWord": {"actionID": "relatedWord", "parserID": "DOM"},
+    "shupingList": {"actionID": "shupingList", "parserID": "DOM"},
+    "shupingHome": {"actionID": "shupingHome", "parserID": "DOM"},
+    "shudanDetail": {"actionID": "shudanDetail", "parserID": "DOM"},
+    "bookDetail": {
+      "actionID": "bookDetail",
+      "parserID": "DOM",
+      "host": "{{SOURCE_URL}}",
+      "httpHeaders": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Referer": "{{SOURCE_URL}}/"
+      },
+      "responseFormatType": "html",
+      "requestInfo": "%@result",
+      "validConfig": "",
+      "bookName": "//meta[@property='og:novel:book_name']/@content",
+      "author": "//meta[@property='og:novel:author']/@content",
+      "cover": "//meta[@property='og:image']/@content",
+      "cat": "//meta[@property='og:novel:category']/@content",
+      "desc": "//meta[@property='og:description']/@content",
+      "status": "//meta[@property='og:novel:status']/@content",
+      "lastChapterTitle": "//meta[@property='og:novel:latest_chapter_name']/@content",
+      "wordCount": ""
+    },
+    "chapterList": {
+      "actionID": "chapterList",
+      "parserID": "DOM",
+      "host": "{{SOURCE_URL}}",
+      "httpHeaders": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Referer": "{{SOURCE_URL}}/"
+      },
+      "responseFormatType": "html",
+      "requestInfo": "%@result",
+      "validConfig": "",
+      "list": "",
+      "title": "",
+      "url": ""
+    },
+    "chapterContent": {
+      "actionID": "chapterContent",
+      "parserID": "DOM",
+      "host": "{{SOURCE_URL}}",
+      "httpHeaders": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Referer": "{{SOURCE_URL}}/"
+      },
+      "responseFormatType": "html",
+      "requestInfo": "%@result",
+      "validConfig": "",
+      "content": "",
+      "replaceRegex": ""
+    },
+    "bookWorld": {
+      "browse": {
+        "actionID": "browse",
+        "parserID": "DOM",
+        "host": "{{SOURCE_URL}}",
+        "httpHeaders": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Referer": "{{SOURCE_URL}}/"
+        },
+        "responseFormatType": "html",
+        "requestInfo": "",
+        "validConfig": "",
+        "list": "",
+        "bookName": "",
+        "detailUrl": "",
+        "cover": ""
+      }
+    }
+  }
+}
